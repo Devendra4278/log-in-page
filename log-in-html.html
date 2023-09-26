@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in page</title>
+    
+    <style>
+        .container{
+    height: 70vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-top-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+    z-index:1;
+    border: solid 3px;
+    backdrop-filter: blur(15px);
+}
+
+#log{
+    display: flex;
+    font-weight: 900;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: black;
+   
+}
+.mail{
+    outline: none;
+    border:none;
+    border-bottom: 2px solid ;
+    position: relative;
+    width: 310px ;
+    margin: 50px;
+    z-index: 2;
+    color: black;
+    
+   
+    
+}
+.mail label {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    color: black;
+    
+    outline: none;
+    transition-duration: .5s;
+    
+}
+
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -30px;
+    font-size: 20px;
+    
+}
+
+
+input{
+    transform: translateY(-10px);
+  
+   
+}
+.log{
+  
+    height: 55vh;
+}
+.mail input{
+    width: 100%;
+    
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0;
+    outline: none;
+    font-size: 18px;
+    padding: 0 35px 0 5px;
+    color: rgb(255, 132, 0);
+}
+.head{
+    position: relative;
+    height: 50px;
+    align-items: center;
+    width: 300px;
+    margin-left: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+.head:focus~label{
+    top: 15px;
+    
+    
+}
+#ram label{
+    font-size: 28px;
+}
+.forgot a{
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 80%;
+    margin-left: 40px;
+    border-radius: 50px;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: all;
+    
+}
+.foot{
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 18px;
+}
+.foot a{
+    color: red;
+    text-decoration: none;
+}
+.foot a:hover{
+    text-decoration: underline;
+}
+.sec{
+    display: flex;
+    align-items: center;
+   
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(nad.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: gray;
+    transition-duration: .5s;
+}
+button:active{
+    background-color: lightgray;
+}
+a:hover{
+    color: brown;
+    transition-duration: .5s;
+}
+body{
+    margin: 0;
+}
+@media (max-width:360px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border: transparent;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="sec">
+        
+    <fieldset style="z-index: 20;" class="container">
+        <div class="Log">
+            <div style="z-index: ;" id="Log">User-Log IN</div>
+            <form style="z-index: 100;" action="">
+                <div class="mail">
+                    <input type="email" required >
+                   <label for="">Email</label>
+                </div>
+                <div class="mail">
+                    <input type="password" required >
+                    <label  for="">password</label>
+                </div>
+                <div class="head">
+                <div class="Remeber">
+                   <input  style="font-size: 10px;" type="checkbox">
+                   <label for="" >Remeber Me!</label>
+                </div>
+                <div class="Forgot">
+                    <a href="">Forgot password ?</a>
+                </div>
+                </div>
+                <div class="button">
+                    <button>Log In</button>
+                </div>
+                <div class="foot">
+                    <p>Don't have an account? <a href="">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</div>
+
+    </body>
+</html>
+
+
